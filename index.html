@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Word-Guess-Game</title>
-        <script src="assets/javascript/game.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link src="assets/css/style.css" type="text/css" rel="stylesheet"/>
 
-    </head>
-    <body>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+<head>
+    <title>Word-Guess-Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-warning text-dark">
+        <div class="container">
+            <h1 class="display-4">Word-Guess-Game</h1>
+            <p class="lead">If you like dogs geuss the breeds!!!</p>
+        </div>
+    </div>
+    <div class="container p-3 mb-2 bg-secondary text-white mx-auto">
+        <div class="row">
+            <div class="col-5"><img src="assets/images/question-mark.png" alt="dog" class="img-thumbnail"><span
+                    id="getPicture"></span>
+            </div>
+            <div class="col-6 mt-auto mx-auto mb-auto pb-auto text-center"><strong>Dog</strong><span
+                    id="getWord"></span></div>
+        </div>
+
+        <div class="container-result">
+            <div class="row">
+                <div class="col-4 border mt-2">
+                    <div class="row">
+                        <div class="mx-2">
+                            <h3>Win:</h3>
+                        </div>
+                            <div >
+                          <h3 id="userWin"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-4 border  mt-2">
+                    <div class="row">
+                        <div class="mx-2">
+                            <h3>Lose:</h3>
+                        </div>
+                            <div>
+                                <h3 id="userLose"></h3>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ml-auto mb-auto border"><strong></strong><span id="getGesses"></span></div>
+            <div class="col-6 ml-auto mb-auto border text-center"><strong>Attempts:</strong><span
+                    id="getAttempts"></span></div>
+        </div>
+    </div>
+    <div class="fixed-bottom">
+        Play one more time
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
