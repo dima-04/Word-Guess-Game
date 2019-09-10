@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <audio src="assets/sounds/labrador.mp3" autoplay="autoplay" loop="loop"></audio>
     <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-warning text-dark">
         <div class="container">
             <h1 class="display-4">Word-Guess-Game</h1>
@@ -22,8 +23,8 @@
             <div class="col-5">
                 <img src="assets/images/question-mark.png" alt="dog" id="gamePicture" class="img-thumbnail">
             </div>
-            <div class="col-6 mt-auto mx-auto mb-auto pb-auto text-center"><strong></strong><span
-                    id="getWord"></span></div>
+            <div class="col-6 mt-auto mx-auto mb-auto pb-auto text-center"><strong></strong><span id="getWord"></span>
+            </div>
         </div>
 
         <div class="container-result">
@@ -33,28 +34,34 @@
                         <div class="mx-2">
                             <h3>Win:</h3>
                         </div>
-                            <div >
-                          <h3 id="userWin"></h3>
-                            </div>
+                        <div>
+                            <h3 id="userWin"></h3>
                         </div>
                     </div>
                 </div>
+                <div class="col-6 ml-auto mb-auto border text-center"><strong>Attempts:</strong><span
+                        id="getAttempts"></span></div>
+
+            </div>
             <div class="row">
                 <div class="col-4 border  mt-2">
                     <div class="row">
                         <div class="mx-2">
                             <h3>Lose:</h3>
                         </div>
-                            <div>
-                                <h3 id="userLose"></h3>
-                            </div>
+                        <div>
+                            <h3 id="userLose"></h3>
+                        </div>
                     </div>
+
                 </div>
+                <div class="col-6 ml-auto mb-auto border text-center"><strong>Letters Used:</strong><span
+                        id="lettersUsed"></span></div>
             </div>
-            <div class="col-6 ml-auto mb-auto border"><strong></strong><span id="getGesses"></span></div>
-            <div class="col-6 ml-auto mb-auto border text-center"><strong>Attempts:</strong><span
-                    id="getAttempts"></span></div>
         </div>
+
+
+
     </div>
     <div class="fixed-bottom">
         Play one more time
