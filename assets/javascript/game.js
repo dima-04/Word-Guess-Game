@@ -9,6 +9,7 @@ var userLoseH3 = document.getElementById("userLose");
 var userWinH3 = document.getElementById("userWin");
 var attemptsSpan = document.getElementById("getAttempts");
 var getWordSpan = document.getElementById("getWord");
+var gamePictures = document.getElementById("gamePicture");
 
 
 function startGame() {
@@ -45,11 +46,13 @@ document.onkeyup = function (event) {
     }
     if (str === keyWord) {
         win++;
+        gamePictures.setAttribute("src","assets/images/"+ keyWord + ".jpg");
         startGame();
     }
     if (attempts === 0) {
         lose++;
         startGame();
+       
     }
 
     updateUI();
